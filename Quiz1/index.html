@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 - Form Pendaftaran</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Formulir Registrasi</h1>
+        </header>
+        <section>
+            <h2>PESERTA</h2>
+            <form>
+                <div class="flexbox">
+                    <label for="nama_gelar">Nama Lengkap & Gelar : </label>
+                    <div class="stretch">
+                        <input type="text" id="nama_gelar" name="nama_gelar">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <label for="instansi_kota">Asal Instansi / Kota : </label>
+                    <div class="stretch">
+                        <input type="text" id="instansi_kota" name="instansi_kota">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <label for="alamat">Alamat : </label>
+                    <div class="stretch">
+                        <input type="text" id="alamat" name="alamat">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <label for="kode_pos">Kode Pos : </label>
+                    <div class="stretch">
+                        <input type="text" id="kode_pos" name="kode_pos">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <label for="provinsi">Provinsi : </label>
+                    <div class="stretch">
+                        <input type="text" id="provinsi" name="provinsi">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <label for="no_telp">Telpon / Handphone : </label>
+                    <div class="stretch">
+                        <input type="text" id="no_telp" name="no_telp">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <label for="email">Email : </label>
+                    <div class="stretch">
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="flexbox">
+                    <label for="sponsor">Sponsor : </label>
+                    <div class="stretch">
+                        <input type="text" id="sponsor" name="sponsor" readonly>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <div class="flexbox">
+                            <label for="nama_perusahaan_sponsor">Nama Perusahaan : </label>
+                            <div class="stretch">
+                                <input type="text" id="nama_perusahaan_sponsor" name="nama_perusahaan_sponsor">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flexbox">
+                            <label for="alamat_perusahaan_sponsor">Alamat Perusahaan : </label>
+                            <div class="stretch">
+                                <input type="text" id="alamat_perusahaan_sponsor" name="alamat_perusahaan_sponsor">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flexbox">
+                            <label for="nama_personal_sponsor">Nama Kontak Personal : </label>
+                            <div class="stretch">
+                                <input type="text" id="nama_personal_sponsor" name="nama_personal_sponsor">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flexbox">
+                            <label for="telp_personal_sponsor">Telp. Personal : </label>
+                            <div class="stretch">
+                                <input type="text" id="telp_personal_sponsor" name="telp_personal_sponsor">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flexbox">
+                            <label for="email_perusahaan_sponsor">Email Perusahaan : </label>
+                            <div class="stretch">
+                                <input type="text" id="email_perusahaan_sponsor" name="email_perusahaan_sponsor">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btn">
+                    <button type="submit" value="submit" onclick="regist()">Submit</button>
+                </div>
+            </form>
+            <div class="text-form">
+                <p>Konstribusi peserta Rp2.500.00,- (Dua Juta Lima Ratus Ribu Rupiah) belum termasuk penginapan dan akomodasi</p>
+                
+                <ul>Konfirmasi Kepesertaan :
+                    <li>Sebelum 15 Januari 2012 : Rp2.500.000,-</li>
+                    <li>Setelah 15 Januari 2012 : Rp2.750.000,-</li>
+                    <li>On Site : Rp3.000.000,-</li>
+                </ul>
+                <ul>Pembatalan Pendaftaran :
+                    <li>Sebelum H-5 uang dikembalikan 50%</li>
+                    <li>Setelah H-5 uang tidak dapat dikembalikan</li>
+                </ul>
+
+                <p>Akomodasi penginapan peserta, harga kamar kelas standar berkisar antara <br>Rp250.000,- - Rp300.000,- *) </p>
+            </div>
+            <div class="text-rekening">
+                <p>Pendaftaran via transfer Bank ke : </p>
+                <table>
+                    <tr>
+                        <td width="150px">Nama Bank</td>
+                        <td>:</td>
+                        <td>Bank BCA KCU Cirebon</td>
+                    </tr>
+                    <tr>
+                        <td>No. Rekening</td>
+                        <td>:</td>
+                        <td>1341015478</td>
+                    </tr>
+                    <tr>
+                        <td>Atas Nama</td>
+                        <td>:</td>
+                        <td>Junaedi, S.Kep</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <p>Bukti transfer mohon dikirim ke alamat Sekretaris Panitia UPTD Puskesmas Sitopeng <br> Jl. Sekarsari No. 1 Argatunya Haramakti Kota Cirebon <br> atau kirim ke email : entrepreneurse41@gmail.com <br> Konfirmasi setelah transfer ke 0818232669</p> 
+        </footer>
+    </div>
+    
+    <script src="public/script.js"></script>
+</body>
+</html>
