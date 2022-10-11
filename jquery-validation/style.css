@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.flexbox .stretch {
+    flex: 1;
+}
+
+.flexbox .normal {
+    flex: 0;
+    margin: 0 0 0 1rem;
+}
+
+.flexbox div input {
+    padding: .2em 0em;
+    width: 100%;
+}
+
+.flexbox div button {
+    padding: .5em 1em;
+    white-space: nowrap;
+}
+
+body {
+    background: linear-gradient(135deg, #51abcb 0%, #bee0ec 100%);
+    color: var(--color-white);
+}
+
+.content {
+    padding: 10px;
+    margin: 20px;
+}
+
+/* .content>header {
+    background-color: #e4c523;
+    position: absolute;
+    width: fit-content;
+    padding: 5px 30px;
+    margin-left: 610px;
+    border-radius: 10px;
+} */
+
+.content>section {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    background-color: #eef8ff;
+    border-radius: 100px;
+    padding: 10px 50px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 10px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    justify-self: center;
+}
+
+.text-form {
+    margin-top: 30px;
+}
+
+.text-form>* {
+    margin-top: 20px;
+}
+
+.text-form li {
+    margin-left: 30px;
+}
+
+.text-rekening {
+    font-weight: bold;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #FFFFFF;
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    padding: 5px 30px;
+    margin-left: 100px;
+    border-radius: 10px;
+    bottom: -820px;
+    left: 0px;
+    margin-right: 200px;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn button {
+    padding: 5px 10px;
+    font-weight: bold;
+}
